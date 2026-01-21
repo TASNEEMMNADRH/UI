@@ -25,7 +25,12 @@ on:
         - desktop
         - tablet
         - mobile  
-  
+
+
+
+
+
+
 
 jobs:
   playwright-tests:
@@ -36,7 +41,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 1  # Fetch only the latest commit to speed up the checkout process
-        repository: Reem1996k/InvParserUI-ReemKa  # Replace with your UI testing repo
+        repository: TASNEEMMNADRH/UI  # Replace with your UI testing repo
       
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -55,6 +60,6 @@ jobs:
     - name: Run Playwright tests
       env:
         HEADLESS: true
-        APP_URL: https://lichenlike-kellee-autocratically.ngrok-free.dev
+        APP_URL: https://shivery-faucal-nash.ngrok-free.dev
       run: |
         pytest test/ -v
